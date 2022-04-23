@@ -1,0 +1,3 @@
+config = {
+    warningText: "Spam Warni"
+}

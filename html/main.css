@@ -1,0 +1,125 @@
+@import url(https://fonts.googleapis.com/css?family=Kanit);
+body {
+    margin:0;
+    padding:0;
+    font-family:Kanit;
+    font-weight:700;
+    display: none;
+}
+
+ul.form {
+    position:relative;
+    background:rgb(23 23 23 / 80%);
+    width:250px;
+ 
+    padding:0;
+    list-style: none;
+    overflow:hidden;
+    
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;	
+    
+    -webkit-box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
+    box-shadow:  1px 1px 10px rgba(0, 0, 0, 0.1);	
+
+    margin-top:10%;
+    margin-left:10%
+    
+}
+
+.form li a {
+    width:225px;
+    padding-left:20px;
+    height:50px;
+    line-height:50px;
+    display:block;
+    overflow:hidden;
+    position:relative;
+    text-decoration:none;
+    font-size:14px;
+    color:#686868;  
+    -webkit-transition:all 0.2s linear;
+    -moz-transition:all 0.2s linear;
+    -o-transition:all 0.2s linear;
+    transition:all 0.2s linear;			
+}
+
+.title-blip{
+    margin-left: 0.75rem;
+    margin-right: 0.75rem;
+}
+
+.form li a:hover {
+    background:#efefef;
+}
+
+.form li a.active {
+    border-left:5px solid #008747;
+}
+  
+.form li a.passive {
+        border-left:5px solid #dc143c;
+}
+
+.form li a.logout {
+        border-left:5px solid #dde2d5;
+}	
+
+.form li:first-child a:hover, .form li:first-child a {
+    -webkit-border-radius: 5px 5px 0 0;
+    -moz-border-radius: 5px 5px 0 0;
+    border-radius: 5px 5px 0 0;
+}
+
+.form li:last-child a:hover, .form li:last-child a {
+    -webkit-border-radius: 0 0 5px 5px;
+    -moz-border-radius: 0 0 5px 5px;
+    border-radius: 0 0 5px 5px;
+}
+
+.form li a:hover i {
+    color:#ea4f35;
+}
+
+.form i {
+    margin-right:15px;
+    -webkit-transition:all 0.2s linear;
+    -moz-transition:all 0.2s linear;
+    -o-transition:all 0.2s linear;
+    transition:all 0.2s linear;	
+}
+
+.form li.selected a {
+    background:#efefef;
+}
+
+.form li a .selected {
+    background:#efefef;
+}
+
+h1 {
+    color:#fff;
+    margin:0 auto;
+    margin-top:60px;
+    margin-bottom:40px;
+    font-size:30px;
+    width:300px;
+    text-align:center;
+}
+
+p {
+    text-align:center;
+    position:absolute;
+    width:100%;
+    bottom:0;
+    font-size:12px;
+    font-family:Arial, Helvetica;
+    color:#fff;
+    text-transform:uppercase;
+}
+p a {
+    color:#fff;
+    text-decoration:none;
+}
