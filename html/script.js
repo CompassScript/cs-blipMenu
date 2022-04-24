@@ -30,13 +30,24 @@ $(document).ready(function(){
                 nuiStatus(false);
                 break;
             case "setupLS":
-                $.each(event.data.data, function(index, value) {
-                    generalData = event.data.data;
-                    if (localStorage.getItem(index)) {
-                        var activeOrPassive = localStorage.getItem(index);
-                        lsLoader(index, activeOrPassive);
-                    }
-                });
+                if (event.data.status) {
+                    $.each(event.data.data, function(index, value) {
+                        if (localStorage.getItem(index)) {
+                            var activeOrPassive = localStorage.getItem(index);
+                            lsLoader(index, activeOrPassive);
+                        } else {
+                            lsLoader(index, "active");
+                            localStorage.setItem(index, "active");
+                        }
+                    });
+                } else {
+                    $.each(event.data.data, function(index, value) {
+                        if (localStorage.getItem(index)) {
+                            var activeOrPassive = localStorage.getItem(index);
+                            lsLoader(index, activeOrPassive);
+                        }
+                    });
+                }
                 break;
         }
     });
