@@ -1,5 +1,6 @@
 Config = {}
 
+Config.DefaultBlip = true --if it is true then all blips are going to be on as default but just for first time.
 Config.Blips = {
     ["clothes"] = {
         name = "Clothes Shop",
