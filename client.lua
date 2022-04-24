@@ -7,7 +7,8 @@ Citizen.CreateThread(function()
     blips = Config.Blips
     SendNUIMessage({
         action = "setupLS",
-        data = blips
+        data = blips,
+        status = Config.DefaultBlip
     })
 end)
 
